@@ -1,0 +1,38 @@
+### Create Author
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Robert Martin",
+  "email": "robert@gmail.com",
+  "bio": "Author of Clean Code"
+}
+
+### Create Book
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "isbn": "978-0132350884",
+  "available": true
+}
+
+### Create Member
+POST http://localhost:8080/members
+Content-Type: application/json
+
+{
+  "name": "Anjan",
+  "email": "anjan@gmail.com",
+  "phone": "314-000-0000"
+}
+
+### Borrow book
+POST http://localhost:8080/members/1/borrow/1
+
+### Get all books
+GET http://localhost:8080/books
+
+### Search books
+GET http://localhost:8080/books/search?title=clean
